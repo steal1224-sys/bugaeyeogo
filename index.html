@@ -504,7 +504,8 @@
         }
         .one-liner {
             font-size: 17px;
-            font-weight: 500;
+            font-weight: 700;
+            font-style: italic;
             color: var(--brown-dark);
             border-left: 4px solid var(--amber);
             padding-left: 14px;
@@ -1245,7 +1246,7 @@ async function showDetail(id) {
                 <div class="detail-tags">
                     <span class="tag">${esc(r.genre||'기타')}</span>
                 </div>
-                <h2 style="font-style:italic">${esc(r.title)}</h2>
+                <h2>${esc(r.title)}</h2>
                 <div class="d-author">${esc(r.author)} 지음</div>
                 <div class="d-stars">${difficultyStr(r.difficulty, true)}</div>
                 <div class="d-meta">✏️ ${esc(r.studentName)} (${esc(r.studentClass)})${date ? ' · ' + date : ''}</div>
